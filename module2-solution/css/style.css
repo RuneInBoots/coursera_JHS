@@ -1,0 +1,77 @@
+/*  -------------------------------------------------------
+    General
+    -------------------------------------------------------  */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "open sans", sans-serif;
+      color: #49423D;
+    }
+
+    main {
+      padding: 0 2%;
+    }
+
+    h1 {
+      font-size: 1.75em;
+      text-align: center;
+      margin: 30px;
+    }
+
+    section {
+      position: relative;
+      border: 1px solid black;
+      margin: 20px 40px;
+      background-color: #FEE5AD;
+      padding: 15px;
+    }
+
+    section h2 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 150px;
+      text-align: center;
+      border: 1px solid black;
+      padding: 5px;
+    }
+
+    .fox h2 {background-color: #A1DBB2;}
+    .zebra h2 {background-color: #F7A541;}
+    .otter h2 {background-color: #F45D4C;}
+
+    section div {margin-top: 25px;}
+
+    section span {
+      display: block;
+      opacity: .6;
+      font-style: italic;
+      padding-top: 15px;
+    }
+
+/*  -------------------------------------------------------
+	Responsive layout
+	-------------------------------------------------------  */
+
+  /* All above is the CSS for the mobile view (equal or less than 767px) */
+
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    section {
+      float: left;
+      width: 48%;
+      margin: 0;
+    }
+    .fox {margin-right: 4%;}
+    .otter {width: 100%; margin-top: 40px;}
+	}
+
+  @media all and (min-width: 992px) {
+    section {
+      float: left;
+      width: 30%;
+      margin: 0 2%;
+    }
+    .zebra, .otter {margin-left: 0%;}
+  }
