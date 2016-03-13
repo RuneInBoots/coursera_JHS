@@ -1,9 +1,7 @@
 /*  -------------------------------------------------------
     General
     -------------------------------------------------------  */
-    * {
-      box-sizing: border-box;
-    }
+    * {box-sizing: border-box;}
 
     body {
       font-family: "open sans", sans-serif;
@@ -11,19 +9,21 @@
     }
 
     main {
-      padding: 0 2%;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 30px;
     }
 
     h1 {
       font-size: 1.75em;
       text-align: center;
-      margin: 30px;
+      margin-top: 20px;
     }
 
     section {
       position: relative;
       border: 1px solid black;
-      margin: 20px 40px;
+      margin: 10px;
       background-color: #FEE5AD;
       padding: 15px;
     }
@@ -59,19 +59,14 @@
 
   @media all and (min-width: 768px) and (max-width: 991px) {
     section {
-      float: left;
-      width: 48%;
-      margin: 0;
+      flex: 1;
+      min-width: 45%;
     }
-    .fox {margin-right: 4%;}
-    .otter {width: 100%; margin-top: 40px;}
 	}
 
   @media all and (min-width: 992px) {
     section {
-      float: left;
-      width: 30%;
-      margin: 0 2%;
+      flex: 1;
+      flex-direction: row;
     }
-    .zebra, .otter {margin-left: 0%;}
   }
